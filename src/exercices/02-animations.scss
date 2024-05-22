@@ -7,6 +7,29 @@
     border-radius: 5px;
     color: #003566;
     box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    animation: changeShadow 3s ease-in-out infinite;
+
+    @keyframes changeShadow {
+      0% {
+        box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+      }
+
+      25% {
+        box-shadow: 0px 0px 4px 6px rgba(#003566, 0.25);
+      }
+
+      50% {
+        box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+      }
+
+      75% {
+        box-shadow: 0px 0px 4px 6px rgba(#003566, 0.25);
+      }
+
+      100% {
+        box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+      }
+    }
   }
 
   .loader {
@@ -18,5 +41,24 @@
     background: #ffbe0b;
     border-radius: 50px;
     color: #fff;
+    animation: loadColor 10s linear infinite;
+
+    @keyframes loadColor {
+      0% {
+        background: hsla(44, 100%, 52%, 1);
+      }
+
+      33% {
+        background: hsla(334, 100%, 50%, 1);
+      }
+
+      66% {
+        background: hsla(265, 83%, 57%, 1);
+      }
+
+      100% {
+        background: hsla(44, 100%, 52%, 1);
+      }
+    }
   }
 }
